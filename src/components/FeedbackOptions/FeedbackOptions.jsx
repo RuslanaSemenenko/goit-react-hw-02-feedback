@@ -1,6 +1,7 @@
 import React from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import PropTypes from 'prop-types';
+import styles from './FeedbackOptions.module.css';
 
 const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
@@ -11,6 +12,7 @@ const FeedbackOptions = ({ options, onLeaveFeedback }) => {
           type="button"
           name={option}
           onClick={onLeaveFeedback}
+          className={styles.button}
         >
           {option}
         </button>
